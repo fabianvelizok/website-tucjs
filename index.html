@@ -11,23 +11,35 @@
         <meta name="viewport" content="width=device-width">
         <link rel="stylesheet" href="css/normalize.min.css">
         <link rel="stylesheet" href="css/main.css">
-        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 
         <!--Google Fonts-->
         <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,200|Titillium+Web:400,300,600,200' rel='stylesheet' type='text/css'>
         <!--Fin Google Fonts-->
+
+        <!--Configuracion MeetUp API-->
+
+            <script>
+                $api_key ="7b27b2b6a3d8286211304f75575a4b"; //keyAPI
+                var $parameters = {
+                    urlname: "Tuc-JS"
+                };                
+            </script>
+
+        <!--FIN Configuracion MeetUp API-->
+
+
+        <!--[if lt IE 9]>
+            <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+            <script>window.html5 || document.write('<script src="js/vendor/html5shiv.js"><\/script>')</script>
+        <![endif]-->
     </head>
     <body>
         <header>
             <!--<div class="BDashed"></div>-->
             <div class="limite">
                 <div class="logo limite">
-                    <!--<hgroup>  
-                        <h1>T<span>U</span>C</h1>        
-                    </hgroup>    -->
                     <div class="CLogo">
-                        <img src="img/JS.png">
+                        <img src="img/JS.png"><!--Alto Logo & Aguante Jquery-->
                     </div>
                 </div>
                 <nav>
@@ -53,26 +65,132 @@
                         </h2>
                     </hgroup>    
                 </div>
-                <div class="charla">Aqui ira el php q captura el html</div>         
+                <div class="charla">
+                    <div class="cntLM">
+                        <img src="img/logo.jpg" alt="TucJs">
+                    </div>
+                    <div class="Bloquesote">
+                        <!--.linea-->
+                        <div class="linea" id="tema">
+                            <div class="tx">
+                                <span class="icon">c</span>
+                                De que hablaremos:
+                            </div>
+                            <div class="tx2">
+                                 (Cargando...)
+                            </div>
+                        </div><!--.linea-->                        
+                        <!--.linea-->
+                        <div class="linea" id="cuando">
+                            <div class="tx">
+                                <span class="icon">h</span>
+                                Cuando:
+                            </div>
+                            <div class="tx2">
+                                 (Cargando...)
+                            </div>
+                        </div><!--.linea-->
+                        <!--.linea-->
+                        <div class="linea" id="donde">
+                            <div class="tx">
+                                <span class="icon">d</span>
+                                Donde:
+                            </div>
+                            <div class="tx2">
+                                (Cargando...)
+                            </div>
+                        </div><!--.linea-->                        
+                        <!--.linea-->
+                        <div class="linea" id="viejas">
+                            <div class="tx">
+                                <span class="icon">v</span>
+                                (Cargando...)
+                            </div>
+                            <div class="tx2">
+                                (Cargando...)
+                            </div>
+                        </div><!--.linea-->                        
+                        <!--.linea-->
+                        <div class="linea">
+                            <div class="cntBoton">
+                                <a href="http://www.meetup.com/Tuc-JS/">
+                                    <span class="icon">a</span>
+                                    ASISTIR
+                                </a>
+                            </div>       
+                        </div><!--.linea-->
+                    </div>
+                </div>         
             </div>
         </section>
         <section class="LCharlas limite">
             <div class="linea1">
                 <span>Nuestras Charlas</span>
             </div>
-            <div class="centerL">           
+            <div class="centerL"> 
+
+                <!--.lista-->          
                 <div class="lista">
+                    <!--.CNTL-->
                     <div class="CNTL">
                         <div class="titulito2">#1 Arrancando TucJS</div>
                         <ul>
-                            <li>Introducción a NodeJS (Slides) por <a href="https://twitter.com/leostera" target="_blank">@leostera</a></li>
-                            <li>DHTMLX (Slides, Video) por <a href="https://twitter.com/Alecaceresprado" target="_blank">@alecaceresprado</a></li>
-                            <li>Titanium Appcelerator (Slides, Video) por <a href="https://twitter.com/keniobats" target="_blank">@keniobats</a></li>
-                            <li>El Zen y BackboneJS (Slides, Video) por <a href="https://twitter.com/gonzalodelgado" target="_blank">@gonzalodelgado</a></li>
-                            <li>Web Services en NodeJS por <a href="https://twitter.com/leostera" target="_blank">@leostera</a></li>
+                            <li>Introducción a NodeJS (<a href="https://slid.es/leostera/intronodejs" target="_blank">Slides</a>) por 
+                                <span 
+                                    data-twitter="leostera" 
+                                    data-github="leostera"
+                                    data-foto="https://1.gravatar.com/avatar/0ec52de072f571779877f6a4bed35fa2?d=https%3A%2F%2Fidenticons.github.com%2Ff14b91a44d4cc2e5be97176bd8d405cb.png&=440"
+                                    >
+                                    @leostera
+                                </span>
+                            </li>
+
+                            <li>DHTMLX (<a href="http://slid.es/alejandrocaceresprado/dhtmlx-intro" target="_blank">Slides</a>, <a href="http://www.youtube.com/watch?v=UafyZx9X3k8" target="_blank">Video</a>) por 
+                                <span
+                                    data-twitter="Alecaceresprado"
+                                    data-github="Alecaceresprado"
+                                    data-foto="http://photos1.meetupstatic.com/photos/member/6/4/0/2/member_140965602.jpeg"
+                                    >
+                                    @alecaceresprado
+                                </span>
+
+                            </li>
+
+                            <li>Titanium Appcelerator (<a href="http://slid.es/podazza/titaniummobile" target="_blank">Slides</a>, <a href="http://www.youtube.com/watch?v=sJjuEDvIurY" target="_blank">Video</a>) por
+                                <span
+                                    data-twitter="keniobats"
+                                    data-github="keniobats"
+                                    data-foto="https://si0.twimg.com/profile_images/1220950000/_DSC0517mod_resize_bigger.jpg"
+                                    >
+                                    @keniobats
+                                </span>
+
+                            </li>
+                            <li>El Zen y BackboneJS (<a href="http://slid.es/gonzalodelgado/zen-y-backbone-js" target="_blank">Slides</a>, <a href="http://www.youtube.com/watch?v=PtHondWtuu0" target="_blank">Video</a>) por
+                                <span
+                                    data-twitter="gonzalodelgado"
+                                    data-github="gonzalodelgado"
+                                    data-foto="https://si0.twimg.com/profile_images/2633970638/77310a31fbfd0a1584491449a9952214_bigger.jpeg"
+                                    >
+                                    @gonzalodelgado
+                                </span>
+                            </li>
+
+                            <li>Web Services en NodeJS por 
+                                <span
+                                    data-twitter="leostera"
+                                    data-github="leostera"
+                                    data-foto="https://1.gravatar.com/avatar/0ec52de072f571779877f6a4bed35fa2?d=https%3A%2F%2Fidenticons.github.com%2Ff14b91a44d4cc2e5be97176bd8d405cb.png&s=440"
+                                    >
+                                    @leostera
+                                </span>                                
+                            </li>
                         </ul>
-                    </div>
-                </div>
+                    </div><!--.CNTL-->
+                </div><!--.lista-->
+
+
+                <!--.lista-->
                 <div class="lista">
                     <div class="CNTL">
                         <div class="titulito2">#2 JavaScript desde cero por<strong> @leostera</strong></div>
@@ -86,20 +204,122 @@
                             <li>Gotchas y errores comunes</li>
                         </ul>
                     </div>
-                </div>            
-                <div class="lista" id="ultima">
+                </div><!--.lista-->
+
+
+                <!--.lista-->
+                <div class="lista">
                     <div class="CNTL" id="Ult">
                         <div class="titulito2">#3 Bases de Datos</div>
                         <ul>
-                            <li>ExpressApp (Codigo) por <a href="https://twitter.com/leostera" target="_blank">@leostera</a> y <a href="https://twitter.com/colkito" target="_blank">@colkito</a></li>
-                            <li>Mongoose (Codigo) por <a href="https://twitter.com/colkito" target="_blank">@colkito</a></li>
+                            <li>ExpressApp (<a href="https://github.com/TucJS/ExpressApp" target="_blank">Codigo</a>) por
+                                <span
+                                    data-twitter="leostera"
+                                    data-github="leostera"
+                                    data-foto="https://1.gravatar.com/avatar/0ec52de072f571779877f6a4bed35fa2?d=https%3A%2F%2Fidenticons.github.com%2Ff14b91a44d4cc2e5be97176bd8d405cb.png&s=440"
+                                    >
+                                    @leostera
+                                </span> 
+                                y                             
+                                <span
+                                    data-twitter="colkito"
+                                    data-github="colkito"
+                                    data-foto="https://0.gravatar.com/avatar/33ed4f852462ac827bf8f6af244037bd?d=https%3A%2F%2Fidenticons.github.com%2Fd24a6a71ad5cb5909562037d5c89bd1a.png&s=440"
+                                    >
+                                    @colkito
+                                </span>                                 
+                            </li>
+                            <li>Mongoose (<a href="https://github.com/TucJS/ExpressApp" target="_blank">Codigo</a>)
+                                <span
+                                    data-twitter="colkito"
+                                    data-github="colkito"
+                                    data-foto="https://0.gravatar.com/avatar/33ed4f852462ac827bf8f6af244037bd?d=https%3A%2F%2Fidenticons.github.com%2Fd24a6a71ad5cb5909562037d5c89bd1a.png&s=440"
+                                    >
+                                    @colkito
+                                </span>                                 
+                            </li>
                         </ul>
                     </div>
-                </div>
+                </div><!--.lista-->
+
+
+                <!--.lista-->
+                <div class="lista">
+                    <div class="CNTL" id="Ult">
+                        <div class="titulito2">#4 Frameworks Web! (Workshop)</div>
+                        <ul>
+                            <li>Intro por
+                                <span
+                                    data-twitter="leostera"
+                                    data-github="leostera"
+                                    data-foto="https://1.gravatar.com/avatar/0ec52de072f571779877f6a4bed35fa2?d=https%3A%2F%2Fidenticons.github.com%2Ff14b91a44d4cc2e5be97176bd8d405cb.png&s=440"
+                                    >
+                                    @leostera
+                                </span> 
+                             
+                            </li> 
+                            <li>Frontend – AngularJS por
+                                <span
+                                    data-twitter="leostera"
+                                    data-github="leostera"
+                                    data-foto="https://1.gravatar.com/avatar/0ec52de072f571779877f6a4bed35fa2?d=https%3A%2F%2Fidenticons.github.com%2Ff14b91a44d4cc2e5be97176bd8d405cb.png&s=440"
+                                    >
+                                    @leostera
+                                </span> 
+                             
+                            </li>
+                            <li>Fullstack – Meteor
+                                <span
+                                    data-twitter="colkito"
+                                    data-github="colkito"
+                                    data-foto="https://0.gravatar.com/avatar/33ed4f852462ac827bf8f6af244037bd?d=https%3A%2F%2Fidenticons.github.com%2Fd24a6a71ad5cb5909562037d5c89bd1a.png&s=440"
+                                    >
+                                    @colkito
+                                </span>                                 
+                            </li>
+                        </ul>
+                    </div>
+                </div><!--.lista-->
+
             </div>    
         </section>
-        <!--[if lt IE 7]>
-            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
-        <![endif]-->
+        <footer>
+            <div class="limite">
+                <div class="div1">
+                    &copy; Tuc JS
+                </div>
+                <div class="div2">
+                    <a 
+                        href="http://experialdigital.com" 
+                        class="developers" 
+                        target="_blank" 
+                        data-twitter="experialdigital"
+                        data-github="FabianVeliz"
+                        data-foto="http://experialdigital.com/img/Fabian.png"                        
+                    >
+                        @Fabián Veliz
+
+                    </a> 
+                     
+                    <a 
+                        href="http://nordecmedia.com" 
+                        class="developers" 
+                        target="_blank" 
+                        data-twitter="nicocedron"
+                        data-github="nicocedron"
+                        data-foto="http://photos3.meetupstatic.com/photos/member/c/c/b/2/member_153172402.jpeg"                        
+                    >
+                        @NicoCedron
+
+                    </a> 
+                </div>
+                <div class="clear"></div>
+
+            </div>
+        </footer>
+
+        <!--Javascript-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script src="js/main.min.js"></script>
     </body>
 </html>
