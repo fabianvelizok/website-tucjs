@@ -1,71 +1,325 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Tuc-js by FabianVeliz</title>
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>TucsJs</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/main.css">
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1>Tuc-js</h1>
-        <p>Sitio Web para TucJs.com</p>
+        <!--Google Fonts-->
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,200|Titillium+Web:400,300,600,200' rel='stylesheet' type='text/css'>
+        <!--Fin Google Fonts-->
 
-        <p class="view"><a href="https://github.com/FabianVeliz/Tuc-JS">View the Project on GitHub <small>FabianVeliz/Tuc-JS</small></a></p>
+        <!--Configuracion MeetUp API-->
+
+            <script>
+                $api_key ="7b27b2b6a3d8286211304f75575a4b"; //keyAPI
+                var $parameters = {
+                    urlname: "Tuc-JS"
+                };                
+            </script>
+
+        <!--FIN Configuracion MeetUp API-->
 
 
-        <ul>
-          <li><a href="https://github.com/FabianVeliz/Tuc-JS/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/FabianVeliz/Tuc-JS/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/FabianVeliz/Tuc-JS">View On <strong>GitHub</strong></a></li>
-        </ul>
-      </header>
-      <section>
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+        <!--[if lt IE 9]>
+            <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+            <script>window.html5 || document.write('<script src="js/vendor/html5shiv.js"><\/script>')</script>
+        <![endif]-->
+    </head>
+    <body>
+        <header>
+            <!--<div class="BDashed"></div>-->
+            <div class="limite">
+                <div class="logo limite">
+                    <div class="CLogo">
+                        <img src="img/JS.png"><!--Alto Logo & Aguante Jquery-->
+                    </div>
+                </div>
+                <nav>
+                    <div class="Menu limite">
+                        <ul>
+                            <li><a href="http://www.meetup.com/Tuc-JS/" target="_blank">VER EN MEETUPS.COM</a></li>
+                            <li><a href="https://github.com/TucJS/" target="_blank">VER EN GITHUB.COM</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <!--<div class="lineaH1 limite"></div>-->
+            </div>
+        </header>
+        <section class="Inicio">
+            <div class="limite">
+                <div class="welcome">
+                    <hgroup>    
+                        <h1>Bienvenido a TucJs</h1>
+                        <h2>
+                            Un grupo para conocer, debatir e inspirar el buen uso y desarrollo con JavaScript, NodeJS, sus libs y sus frameworks. 
+                            <br>
+                            Todos los niveles bienvenidos; todos los participantes invitados a presentar, aprender, y enseñar.
+                        </h2>
+                    </hgroup>    
+                </div>
+                <div class="charla">
+                    <div class="cntLM">
+                        <img src="img/logo.jpg" alt="TucJs">
+                    </div>
+                    <div class="Bloquesote">
+                        <!--.linea-->
+                        <div class="linea" id="tema">
+                            <div class="tx">
+                                <span class="icon">c</span>
+                                De que hablaremos:
+                            </div>
+                            <div class="tx2">
+                                 (Cargando...)
+                            </div>
+                        </div><!--.linea-->                        
+                        <!--.linea-->
+                        <div class="linea" id="cuando">
+                            <div class="tx">
+                                <span class="icon">h</span>
+                                Cuando:
+                            </div>
+                            <div class="tx2">
+                                 (Cargando...)
+                            </div>
+                        </div><!--.linea-->
+                        <!--.linea-->
+                        <div class="linea" id="donde">
+                            <div class="tx">
+                                <span class="icon">d</span>
+                                Donde:
+                            </div>
+                            <div class="tx2">
+                                (Cargando...)
+                            </div>
+                        </div><!--.linea-->                        
+                        <!--.linea-->
+                        <div class="linea" id="viejas">
+                            <div class="tx">
+                                <span class="icon">v</span>
+                                (Cargando...)
+                            </div>
+                            <div class="tx2">
+                                (Cargando...)
+                            </div>
+                        </div><!--.linea-->                        
+                        <!--.linea-->
+                        <div class="linea">
+                            <div class="cntBoton">
+                                <a href="http://www.meetup.com/Tuc-JS/">
+                                    <span class="icon">a</span>
+                                    ASISTIR
+                                </a>
+                            </div>       
+                        </div><!--.linea-->
+                    </div>
+                </div>         
+            </div>
+        </section>
+        <section class="LCharlas limite">
+            <div class="linea1">
+                <span>Nuestras Charlas</span>
+            </div>
+            <div class="centerL"> 
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+                <!--.lista-->          
+                <div class="lista">
+                    <!--.CNTL-->
+                    <div class="CNTL">
+                        <div class="titulito2">#1 Arrancando TucJS</div>
+                        <ul>
+                            <li>Introducción a NodeJS (<a href="https://slid.es/leostera/intronodejs" target="_blank">Slides</a>) por 
+                                <span 
+                                    data-twitter="leostera" 
+                                    data-github="leostera"
+                                    data-foto="https://1.gravatar.com/avatar/0ec52de072f571779877f6a4bed35fa2?d=https%3A%2F%2Fidenticons.github.com%2Ff14b91a44d4cc2e5be97176bd8d405cb.png&=440"
+                                    >
+                                    @leostera
+                                </span>
+                            </li>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
+                            <li>DHTMLX (<a href="http://slid.es/alejandrocaceresprado/dhtmlx-intro" target="_blank">Slides</a>, <a href="http://www.youtube.com/watch?v=UafyZx9X3k8" target="_blank">Video</a>) por 
+                                <span
+                                    data-twitter="Alecaceresprado"
+                                    data-github="Alecaceresprado"
+                                    data-foto="http://photos1.meetupstatic.com/photos/member/6/4/0/2/member_140965602.jpeg"
+                                    >
+                                    @alecaceresprado
+                                </span>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+                            </li>
 
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
+                            <li>Titanium Appcelerator (<a href="http://slid.es/podazza/titaniummobile" target="_blank">Slides</a>, <a href="http://www.youtube.com/watch?v=sJjuEDvIurY" target="_blank">Video</a>) por
+                                <span
+                                    data-twitter="keniobats"
+                                    data-github="keniobats"
+                                    data-foto="https://si0.twimg.com/profile_images/1220950000/_DSC0517mod_resize_bigger.jpg"
+                                    >
+                                    @keniobats
+                                </span>
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+                            </li>
+                            <li>El Zen y BackboneJS (<a href="http://slid.es/gonzalodelgado/zen-y-backbone-js" target="_blank">Slides</a>, <a href="http://www.youtube.com/watch?v=PtHondWtuu0" target="_blank">Video</a>) por
+                                <span
+                                    data-twitter="gonzalodelgado"
+                                    data-github="gonzalodelgado"
+                                    data-foto="https://si0.twimg.com/profile_images/2633970638/77310a31fbfd0a1584491449a9952214_bigger.jpeg"
+                                    >
+                                    @gonzalodelgado
+                                </span>
+                            </li>
 
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
+                            <li>Web Services en NodeJS por 
+                                <span
+                                    data-twitter="leostera"
+                                    data-github="leostera"
+                                    data-foto="https://1.gravatar.com/avatar/0ec52de072f571779877f6a4bed35fa2?d=https%3A%2F%2Fidenticons.github.com%2Ff14b91a44d4cc2e5be97176bd8d405cb.png&s=440"
+                                    >
+                                    @leostera
+                                </span>                                
+                            </li>
+                        </ul>
+                    </div><!--.CNTL-->
+                </div><!--.lista-->
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
 
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+                <!--.lista-->
+                <div class="lista">
+                    <div class="CNTL">
+                        <div class="titulito2">#2 JavaScript desde cero por<strong> @leostera</strong></div>
+                        <ul>
+                            <li>Introduccion al Lenguaje</li>
+                            <li>JSON</li>
+                            <li>Ejemplos</li>
+                            <li>Uso en el Navegador</li>
+                            <li>jQuery</li>
+                            <li>NodeJS</li>
+                            <li>Gotchas y errores comunes</li>
+                        </ul>
+                    </div>
+                </div><!--.lista-->
 
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
 
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
+                <!--.lista-->
+                <div class="lista">
+                    <div class="CNTL" id="Ult">
+                        <div class="titulito2">#3 Bases de Datos</div>
+                        <ul>
+                            <li>ExpressApp (<a href="https://github.com/TucJS/ExpressApp" target="_blank">Codigo</a>) por
+                                <span
+                                    data-twitter="leostera"
+                                    data-github="leostera"
+                                    data-foto="https://1.gravatar.com/avatar/0ec52de072f571779877f6a4bed35fa2?d=https%3A%2F%2Fidenticons.github.com%2Ff14b91a44d4cc2e5be97176bd8d405cb.png&s=440"
+                                    >
+                                    @leostera
+                                </span> 
+                                y                             
+                                <span
+                                    data-twitter="colkito"
+                                    data-github="colkito"
+                                    data-foto="https://0.gravatar.com/avatar/33ed4f852462ac827bf8f6af244037bd?d=https%3A%2F%2Fidenticons.github.com%2Fd24a6a71ad5cb5909562037d5c89bd1a.png&s=440"
+                                    >
+                                    @colkito
+                                </span>                                 
+                            </li>
+                            <li>Mongoose (<a href="https://github.com/TucJS/ExpressApp" target="_blank">Codigo</a>)
+                                <span
+                                    data-twitter="colkito"
+                                    data-github="colkito"
+                                    data-foto="https://0.gravatar.com/avatar/33ed4f852462ac827bf8f6af244037bd?d=https%3A%2F%2Fidenticons.github.com%2Fd24a6a71ad5cb5909562037d5c89bd1a.png&s=440"
+                                    >
+                                    @colkito
+                                </span>                                 
+                            </li>
+                        </ul>
+                    </div>
+                </div><!--.lista-->
 
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-      <footer>
-        <p>This project is maintained by <a href="https://github.com/FabianVeliz">FabianVeliz</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
-    </div>
-    <script src="javascripts/scale.fix.js"></script>
-    
-  </body>
+
+                <!--.lista-->
+                <div class="lista">
+                    <div class="CNTL" id="Ult">
+                        <div class="titulito2">#4 Frameworks Web! (Workshop)</div>
+                        <ul>
+                            <li>Intro por
+                                <span
+                                    data-twitter="leostera"
+                                    data-github="leostera"
+                                    data-foto="https://1.gravatar.com/avatar/0ec52de072f571779877f6a4bed35fa2?d=https%3A%2F%2Fidenticons.github.com%2Ff14b91a44d4cc2e5be97176bd8d405cb.png&s=440"
+                                    >
+                                    @leostera
+                                </span> 
+                             
+                            </li> 
+                            <li>Frontend – AngularJS por
+                                <span
+                                    data-twitter="leostera"
+                                    data-github="leostera"
+                                    data-foto="https://1.gravatar.com/avatar/0ec52de072f571779877f6a4bed35fa2?d=https%3A%2F%2Fidenticons.github.com%2Ff14b91a44d4cc2e5be97176bd8d405cb.png&s=440"
+                                    >
+                                    @leostera
+                                </span> 
+                             
+                            </li>
+                            <li>Fullstack – Meteor
+                                <span
+                                    data-twitter="colkito"
+                                    data-github="colkito"
+                                    data-foto="https://0.gravatar.com/avatar/33ed4f852462ac827bf8f6af244037bd?d=https%3A%2F%2Fidenticons.github.com%2Fd24a6a71ad5cb5909562037d5c89bd1a.png&s=440"
+                                    >
+                                    @colkito
+                                </span>                                 
+                            </li>
+                        </ul>
+                    </div>
+                </div><!--.lista-->
+
+            </div>    
+        </section>
+        <footer>
+            <div class="limite">
+                <div class="div1">
+                    &copy; Tuc JS
+                </div>
+                <div class="div2">
+                    <a 
+                        href="http://experialdigital.com" 
+                        class="developers" 
+                        target="_blank" 
+                        data-twitter="experialdigital"
+                        data-github="FabianVeliz"
+                        data-foto="http://experialdigital.com/img/Fabian.png"                        
+                    >
+                        @Fabián Veliz
+
+                    </a> 
+                     
+                    <a 
+                        href="http://nordecmedia.com" 
+                        class="developers" 
+                        target="_blank" 
+                        data-twitter="nicocedron"
+                        data-github="nicocedron"
+                        data-foto="http://photos3.meetupstatic.com/photos/member/c/c/b/2/member_153172402.jpeg"                        
+                    >
+                        @NicoCedron
+
+                    </a> 
+                </div>
+                <div class="clear"></div>
+
+            </div>
+        </footer>
+
+        <!--Javascript-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script src="js/main.min.js"></script>
+    </body>
 </html>

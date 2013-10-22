@@ -1,0 +1,499 @@
+@import "fonts.styl"
+//CLASES GLOBALES
+//font-family 'Titillium Web', sans-serif
+cross(prop,valor)
+	-webkit-{prop} valor
+	-moz-{prop} valor
+	-o-{prop} valor
+	-ms-{prop} valor
+	{prop} valor
+
+degradado(color1,color2)
+	background color2
+	background -moz-linear-gradient(color1, color2)
+	background -webkit-linear-gradient(color1, color2)
+	background -o-linear-gradient(color1, color2)
+	background -ms-linear-gradient(color1, color2)
+	background linear-gradient(color1, color2)
+
+transition(estilo=all,time=0.5s)
+	-moz-transition: estilo time
+	-webkit-transition: estilo time
+	-o-transition: estilo time
+	-ms-transition: estilo time
+	transition: estilo time
+
+radius(px=100px)
+	-moz-border-radius px
+	-webkit-border-radius px
+	-o-border-radius px
+	-ms-border-radius px
+	border-radius px
+
+.limite
+	max-width 1000px
+	width 100% 
+	margin 0 auto
+	height 100%		
+
+.ocultar
+	display block
+
+.mostrar
+	display none	
+
+.clear
+	clear both
+
+.DNone
+	display none
+
+.linea1
+	height 2px
+	border-bottom 1px solid #e9e9e9
+	width 80%
+	margin 0 auto 5px
+	padding 3px 0
+	
+	span
+		font-size 3em
+		font-family 'Titillium Web', sans-serif
+		font-weight 400
+		color #434343
+		background #fff
+		display block
+		text-align center
+		margin 0 auto
+		width 30%
+		margin-top -21px
+		padding 0 1%
+		min-width 220px	
+
+.tit
+	padding 12px 0
+	text-align center
+	width 30%
+	margin 25px auto 40px
+	position relative
+	font-family 'Open Sans',sans-serif
+	font-weight 400
+	min-width 260px
+	font-size 2em
+	border-bottom 1px solid #5f5f5f
+	color #636363
+
+	span
+		color #4EC1E0
+
+	&:before
+		border-right 5px solid transparent
+		border-top 5px solid #5f5f5f
+		border-left 5px solid transparent
+		content ""
+		position absolute
+		bottom -6px
+		left 50%
+		right 50%
+		margin-right -5px
+		margin-left -5px
+
+//Fin Clases Globales
+
+body
+	margin 0
+	font-size 62.5%
+	color #323232
+	font-family 'Open Sans',sans-serif
+ 
+	::selection
+		background #8BE6FF
+		color #fff
+
+h1,h2
+	margin 0
+	padding 0
+
+header
+	width 100%
+	background #f1f1f1
+	padding 5px 0
+	border-bottom 1px solid #ddd
+
+	.BDashed
+		height 5px
+		border-bottom 1px dashed #212121
+
+	.logo
+		display inline-block
+		width 30%
+		line-height 1px
+
+		.CLogo,hgroup
+			display inline-block
+			vertical-align middle
+
+		.CLogo
+			img
+				width 125px
+
+		hgroup
+			h1
+				font-weight bold
+				color #757575
+				font-size 2em
+				span
+					color #8ec74b
+
+
+
+
+	nav
+		display inline-block
+		width 69%
+
+		.Menu
+			ul 
+				margin 0
+				padding 0
+				list-style none
+				text-align right
+
+				li
+					display inline-block
+					vertical-align middle
+					margin 0 1%
+
+					&:hover
+						a
+							color #585858
+							text-shadow 1px 1px 3px #BDBDBD
+					a
+						margin 0
+						padding 0
+						text-decoration none
+						color #fff
+						padding 11px
+						display block
+						font-size 1.3em
+						font-weight 400
+						degradado(#8add6d, #60b044)
+						radius(8px)
+						transition(all,0.5s)
+
+
+				#LiContact
+					border-right 1px solid #ddd		
+
+	.lineaH1,.lineaH2
+		border-top 1px solid #ddd
+		height 5px
+		margin-top 5px
+
+	.lineaH2
+		height 1px	
+		margin 0 auto !important
+
+section.Inicio
+	position relative
+	background #454545 url("../img/sectionbackground.png") repeat
+	color #fff
+	padding 60px 0
+	overflow hidden
+
+
+	.welcome,.charla
+		float left
+		width 40%
+		margin-left 1%
+
+	.charla
+		margin-left 9%
+		overflow hidden
+		width 50%
+		margin-top 2%
+
+		.cntLM,.Bloquesote
+			float left
+
+		.cntLM
+			width 30%
+			max-width 90px
+			position relative
+
+			&:before
+				width 0
+				height 0
+				border-bottom 15px solid #68c93c
+				border-right 15px solid transparent
+				right -15px
+				top 20px
+				content ""
+				position absolute
+
+			img
+				width 100%
+				display block	
+
+		.Bloquesote
+			width 62%
+			
+			background unquote('url("../img/bloquesoteIE.png") repeat \9')
+			background rgba(255, 255, 255, 0.06)
+			padding 2%
+			margin-left 4%
+			min-height 254px
+			padding-bottom 60px
+			position relative
+			.linea
+				font-family 'Titillium Web',sans-serif
+				margin 5px 0
+				span
+					font-weight bold
+					color #fff
+
+					&.icon
+						font-weight 400
+						margin 0 5px
+				.tx
+					font-size 2.1em
+					color #6CCF4A
+				.tx2	
+					font-size 1.5em
+					padding-left 8%
+					color #e9e9e9
+
+				.cntBoton
+					position absolute
+					width 94%
+					bottom 10px
+
+					a
+						width 100%
+						display block
+						color #fff
+						degradado(#48CB4B, #3C7A37)
+						text-align center
+						padding 10px 0
+						font-size 2em
+						text-decoration none
+						font-family 'Titillium Web',sans-serif
+						font-weight 200
+						radius(3px)
+
+						.icon
+							background: #038241;
+							radius(7px)
+							box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2) inset;
+							color: #FFFFFF;
+							display: inline-block;
+							padding: 3px;
+							text-align: center;
+							vertical-align: middle;		
+							margin-left -10px
+							transition(all,0.5s)
+
+						&:hover .icon
+							background: #2F895B;
+							box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2) inset,0 1px 0 rgba(255, 255, 255, 0.2);
+
+
+	.welcome
+		hgroup
+			h1
+				margin-top 0
+				padding-top 10px
+				font-size 7em
+				line-height 1
+				color #fff
+				letter-spacing: -1px;
+				font-family 'Titillium Web', sans-serif
+				font-weight 300	
+
+			h2
+				margin 20px 0
+				font-size 2em
+				font-family 'Titillium Web', sans-serif
+				font-weight 200
+
+section.LCharlas
+	padding 55px 0
+
+	h1
+		font-size 3em
+		font-family 'Titillium Web', sans-serif
+		font-weight 400
+		color #434343
+		text-align center
+
+	.centerL	
+		text-align center
+		margin-top 30px	
+
+		.lista
+			text-align center
+			width 49%
+			display inline-block
+			padding 0
+			min-width 450px
+			vertical-align top
+
+			.CNTL
+				color #A57878
+				margin 20px
+				border 1px solid #F7EDED
+
+				.titulito2
+					background #555555
+					text-align center
+					font-family 'Titillium Web',sans-serif
+					font-size 2.3em
+					font-weight 300
+					color #FFF
+					padding 10px 0
+					border-radius 5px 5px 0px 0px
+
+				ul,li
+					list-style none
+					margin 0 !important	
+					padding 0
+					text-align left
+
+					span
+						position relative
+						cursor default
+									
+
+
+					a,span
+						color #6DC252
+						text-decoration none
+						font-weight bold
+						transition(all,1s)
+
+						&:hover
+							text-decoration underline
+
+
+					li
+						padding	12px 0
+						padding-left 3%
+						font-size 1.4em
+						border-bottom 1px solid #f1f1f1
+
+						&:last-child
+							border-bottom none
+		#ultima				
+			display block
+			margin-left 1%
+			margin-top 20px
+	
+			#Ult
+				margin-top -97px !important
+				text-align left			
+.cajita
+	position absolute
+	bottom 155%
+	left 0
+	background #fff
+	width 200px
+	height 70px
+	padding 5px
+	radius(2px)
+	border 1px solid #D5D5D5
+	display none
+
+	&:before
+		width 0
+		height 0
+		border-top 10px solid #757575
+		border-right 12px solid transparent
+		position absolute
+		top 100%
+		left 5%
+		z-index 5
+		content ""
+		margin-top 1px
+
+
+	.img
+		float left
+		width 68px
+		height 68px
+		margin-right 5px
+		border 1px solid #dadada
+
+		img
+			width 100%
+			height 100%
+	.buttons
+		float left
+		width 125px
+
+		a
+			display block
+			width 110px
+			background #555
+			color #fff !important
+			font-size 14px !important
+			line-height 32px
+			margin-bottom 5px
+			position relative
+			padding-left 15px
+			text-decoration none !important
+
+			:last-child
+				margin-bottom 0
+
+			&:first-child
+					
+				&:before
+					font-family $iconName
+					content "t "
+			&:last-child
+					
+				&:before
+					font-family $iconName
+					content "g "
+			&:after
+				transition(all,0.2s)
+				border-style solid
+				border-color transparent
+				border-width 10px
+				border-left-color #fff
+				position absolute
+				top 8px
+				left -5px
+				z-index 5
+				content ""
+
+			&:hover
+				&:after
+					border-width 10px
+					left -1px
+					
+footer
+	background #F8F8F8
+	border-top 1px solid #dadada
+	padding 5px 0
+	
+	.div1
+		float left
+		font-size 1.4em
+		color #656565
+	.div2
+		float right
+
+	a.developers
+		position relative
+		font-size 1.2em
+		margin-left 10px
+		text-decoration none
+		color #9C9C9C
+
+		&:hover
+			color #525252
+
+//COMIENZO IMPORTS
+@import 'mqueries.styl'
+
+//FIN IMPORTS
